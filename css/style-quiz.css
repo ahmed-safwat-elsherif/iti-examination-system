@@ -1,0 +1,260 @@
+@font-face{
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: PT_Serif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-color: #F1F1F1;
+    font-family: Roboto;
+}
+/* --------------------- Progress ---------------*/
+#progress{
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #bbbbbb;
+}
+#progress div{
+    width: 1%;
+    height: 10px;
+    border-radius: 5px ;
+    background-color: tomato;
+}
+/* --------------------- Questions ---------------*/
+#questions{
+    display: inline-block;
+    border:3px solid #03506f;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 0 0 40px;
+}
+.card{
+    display: none;
+    width: 100%;
+    height: 380px;
+}
+.title{
+    font-family: Oswald;
+    padding:10px;
+    margin-bottom:40px;
+    background-color: #03506f;
+    color: wheat;
+    display: inline-block;
+    border-radius: 0 0 10px 0;
+    box-shadow: 2px 2px 4px gray;
+    width: 150px;
+}
+.markSign{
+    display: inline-block;
+    float: right;
+    background-color: #0a043c;
+    color: wheat;
+    padding: 5px 10px;
+    border-radius: 0 5px 0 5px;
+    font-size: 20px;
+}
+.question{
+    font-family: Roboto;
+    font-size: 25px;
+    margin: 10px;
+}
+#questions ol{
+    margin-left:20px ;
+    font-family: Roboto;
+    font-size: 20px;
+    display: inline-block;
+}
+#questions label{
+    margin-left: 5px;
+}
+#questions li{
+    margin-left: 20px;
+    padding:10px ;
+    cursor: pointer;
+}
+.active{
+    display: inline-block;
+}
+#questions hr{
+    margin-top: 10px;
+    width: 80%;
+    margin:10px;
+}
+/* ------------------ Profile ----------------*/
+#profile{
+
+    height: 40px;
+    padding-right:100px;
+    margin-bottom: 30px;
+}
+#profile .content{
+    position: absolute;
+    right: 0px;
+    padding: 8px;
+    padding-left:40px;
+    width: 150px;
+    font-weight: bold;
+    font-family: Oswald;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    color: wheat;
+    background-color: #0a043c;
+    height: 40px;
+}
+/* ------------------ Mark --------------*/
+#mark{
+    width: 400px;
+    height: 50vh;
+    border: 3px solid #0a043c;
+    float: right;
+    margin-right:10px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+#mark h2{
+    position: sticky;
+    top: 0;
+    width: 80%;
+    margin:auto;
+    background-color: #0a043c;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    color: wheat;
+    box-shadow: 0 5px 5px #0a043c;
+    font-family: Oswald;
+}
+#marked{
+    width: 80%;
+    margin: auto;
+    margin-top:30px;
+}
+.mCard{
+    width: 100%;
+    height: 30px;
+    padding-left:10px ;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border:1px solid #03506f;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    text-align: left;
+    
+}
+.mCard b{
+    display: inline-block;
+    padding-top:5px ;
+}
+.mCard:hover{
+    box-shadow: 0px 4px 4px #bbbbbb;
+}
+.mCard span{
+    color:wheat;
+    display: inline-block;
+    background-color:#03506f;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    float: right;
+}
+/*---------------- Controllers ---------------- */
+.controllers{
+    padding-left: 80px ;
+}
+button{
+    padding: 8px 12px;
+    background-color: #03506f;
+    color: wheat;
+    border:none;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 4px 5px grey;
+}
+#next{
+    border-radius: 0 0 5px  0;
+}
+#prev{
+    border-radius: 0 0 0  5px;
+}
+#current{
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 17px;
+    padding: 5px;
+    border: 3px solid #03506f;
+    border-top: none;
+    font-weight: bold;
+}
+#markBtn{
+    margin-left: 100px;
+    background-color: #03506f;
+    border-radius: 0 0 5px 5px;
+}
+#submit{
+    background-color: #0a043c;
+    border-radius: 0 0 5px 5px;
+    margin-left: 100px;
+}
+.hide{
+    visibility: hidden;
+}
+/*-------------------Timer-------------------*/
+.timer{
+    border: 2px solid #0a043c;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*----------------- Navigator ----------------*/
+.footer{
+    position: absolute;
+    bottom: 30px;
+}
+.navigator{
+    padding-left:20px;
+}
+.navigator li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border:2px solid brown;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 23px;
+    font-family: Roboto;
+    padding:10px ;
+}
+.navigator li:hover {
+    background-color: brown;
+    color: wheat;
+}

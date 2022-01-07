@@ -1,0 +1,75 @@
+@font-face{
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+:root{
+    --blue:#0a043c;
+    --turquoise:#03506f;
+    --grey:#bbbbbb;
+    --pink:#ffe3d8;
+}
+.timeOut{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+.card{
+    display: none;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px grey;
+    background-color: #ffe3d8;
+}
+.header, .user{
+    font-family: Oswald;
+    font-size: 20px;
+}
+.user{
+    font-weight: bold;
+}
+.grade{
+    font-size: 35px;
+    font-weight: bold;
+}
+.emoji{
+    font-size: 5em;
+    padding-right:10px;
+}
+.emoji, .header{
+    color:#0a043c;
+}
+.intro{
+    font-size: 16px;
+    font-weight: bold;
+}
+.message{
+    padding-top:10px;
+    font-style: italic;
+}
+.messagePhoto, .comic{
+    display: none;
+    position: absolute;
+    bottom: 0;
+ 
+}
+.messagePhoto img, .comic img{
+    width: 380px;
+    height: 300px;
+}
+.comic img{
+    margin-left: 5px;
+    border-radius: 5px;
+}

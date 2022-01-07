@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="../css/style-start.css">
+    <script src="../js/jquery/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+    
+    <div class="message">
+        <h1>Are You Ready For The Exam?</h1>
+        <p>The exam is a 10 multiple-choice questions, and the duration is <em>1 min (60 seconds)</em> <br><span>click <b> Start </b>to begin</span> </p>
+    </div>
+    <div class="center">
+        <button class="btnStart">Start</button>
+      </div>
+</body>
+<script>
+  var btn=document.getElementsByTagName("button")[0];
+  btn.addEventListener("click",function(){
+      window.location.replace("quiz.html");
+  })
+  var animate  = setTimeout(function (){
+  $(".btnStart").fadeIn("slow")
+  }, 2000)
+</script>
+
+</html>

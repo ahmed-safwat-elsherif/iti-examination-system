@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../font-awesome/css/all.css">
+    <link rel="stylesheet" href="../css/style-quiz.css">
+    <link rel="stylesheet" href="../js/jquery/jquery-ui.css">
+    <script src="../js/jquery/jquery-3.5.1.js"></script>
+    <script src="../js/jquery/jquery-ui.js"></script>
+    <script src="../js/script-functions.js"></script>
+</head>
+<body>
+    <div id="progress"><div></div></div>
+    <div id="profile">
+        <div class="content">
+            Hi, <span class="user"></span>       
+        </div>
+    </div>
+    <div id="questions"></div>
+    <div id="mark">
+        <h2>Marked Questions</h2>
+        <ul id="marked"></ul>
+    </div>
+    <div class="controllers">
+        <div class="container">
+            <button class="hide" id="prev"><i class="fas fa-arrow-left"></i> <b>Prev</b></button>
+            <span id="current">1</span>
+            <button id="next"><b>Next</b> <i class="fas fa-arrow-right"></i></button>
+            <button id="markBtn"><b>Mark</b></button>
+            
+            <button id="submit"><b>Submit</b></button>
+            <div class="timer">01:00</div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="navigator">
+            
+        </ul>
+    </div>
+    <script src="../js/script-quiz.js"></script>
+</body>
+</html>

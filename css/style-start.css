@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: PT_Serif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.message{
+    
+    background-color: white;
+    border-radius: 10px;
+    font-family: Roboto;
+    padding: 0 5px 5px 0 ;
+    box-shadow: 2px 2px 4px #03506f;
+    width: 40%;
+    height: 180px;
+    margin: 40px;
+}
+.message p{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    margin-left:10px;
+    color:#023042;
+}
+
+h1{
+    color:#03506f;
+    padding: 5px 10px ;
+    box-shadow: 4px 4px 3px grey;
+    border-radius: 10px 0 5px 5px;
+    position: relative;
+
+  
+    font-family: Oswald;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+}
+.btnStart{
+    display: none;
+}
+.center {
+    margin: auto;
+    width: 192px;
+    padding: 10px;
+}
+.btnStart{
+    color: #03506f;
+    background: white;
+    width: 166px;
+    border: none;
+    padding: 15px 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Oswald;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid  #03506f;
+}
+.btnStart:hover{
+    box-shadow: 2px 2px 10px #03506f;
+    background: #03506f;
+    color: wheat;
+}
